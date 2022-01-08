@@ -1,0 +1,10 @@
+insert into Institution (id, institution_name) values (1, 'Collier Inc');
+insert into Institution (id, institution_name) values (2, 'Doyle LLC');
+insert into Institution (id, institution_name) values (3, 'Harvey-Luettgen');
+insert into Institution (id, institution_name) values (4, 'McDermott, Braun and Kerluke');
+insert into Institution (id, institution_name) values (5, 'Connelly Group');
+insert into Institution (id, institution_name) values (6, 'Stark-Stehr');
+insert into Institution (id, institution_name) values (7, 'Cassin-Schaefer');
+insert into Institution (id, institution_name) values (8, 'Schuster, Bartell and Gleichner');
+insert into Institution (id, institution_name) values (9, 'Ferry Inc');
+insert into Institution (id, institution_name) values (10, 'Mitchell-Lesch');

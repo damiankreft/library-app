@@ -1,0 +1,20 @@
+<div class="container d-flex flex-column col-sm-8 accordion">
+    <div class="items-header mt-3">
+        <div class="col-sm-6 p-2 items-header text-center text-white"><h5>Imię</h5></div>
+        <div class="col-sm-6 p-2 items-header text-center text-white"><h5>Nazwisko</h5></div>
+        <div class="clearfix"></div>
+    </div>
+    <div *ngFor="let account of accounts; let even = even; let odd = odd; let index = index;" class="accordion-item">
+        <h2 [ngClass]="{ odd: odd }" class="accordion-header accordion-item-{{index}}" id="accordion-item-{{index}}-heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" attr.data-bs-target="#accordion-item-{{index}}-body" aria-expanded="true" attr.aria-controls="accordion-item-{{index}}-body">
+                <span class="p-0 m-0 col-sm-6 text-center">{{account.firstname | titlecase}}</span>
+                <span class="p-0 m-0 col-sm-6 text-center">{{account.lastname | titlecase}}</span>
+            </button>
+        </h2>
+        <div id="accordion-item-{{index}}-body" class="accordion-collapse collapse" attr.aria-labelledby="accordion-item-{{index}}-heading">
+            <div class="accordion-body">
+                <p>{{account.email}}</p>
+            </div>
+        </div>
+    </div>
+</div>
